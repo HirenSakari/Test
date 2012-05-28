@@ -1,12 +1,19 @@
 ﻿package  {
 	import flash.display.MovieClip;
 	
-	public class TestDocumentClass {
+	public class TestDocumentClass extends MovieClip{
 
 		public function TestDocumentClass() {
-			
-			private var myTest:MovieClip;
 			// constructor code
+			private var myTest:MovieClip;
+			
+		}
+		
+		private function create()
+		{
+			myTest = new MovieClip();
+			this.addChild(myTest);
+			
 		}
 
 	}
