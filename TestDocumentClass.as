@@ -5,13 +5,15 @@
 
 		public function TestDocumentClass() {
 			// constructor code
-			private var myTest:MovieClip;
+			private var myTest:Sprite;
 			
 		}
 		
-		private function create()
+		private function init()
 		{
-			myTest = new MovieClip();
+			myTest = new Sprite();
+			myTest.x = 50;
+			myTest.y = 50;
 			this.addChild(myTest);
 			
 		}
